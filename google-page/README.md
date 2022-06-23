@@ -6,7 +6,7 @@
 Öncelikle projeyi clonelayın. (Buraya sizin reponuzdan aldığınız link gelecek)
 
 ```
-git clone https://github.com/mussari/kodluyoruzilkrepo.git
+git clone https://github.com/mussarri/front-end-dev-patika.git
 ```
 
 # Usage
