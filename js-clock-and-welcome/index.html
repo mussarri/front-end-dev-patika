@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d52e3f;
+            font-family: 'digital-7', sans-serif;
+            
+        }
+        span{
+		  font-size: 5rem;
+	        text-align: center;
+           height:10vh;
+      line-height: 10vh;
+	    color: #fcedd8;
+	    background: #d52e3f;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 700;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+        }
+
+        div.days {
+  margin: 0 auto;
+  color: #131212;
+}
+div.days .day { display: inline-block; }
+div.days .day p {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+/* CLOCK */
+div.clock { margin: 5px 0; }
+div.clock div {
+  display: inline-block;
+  position: relative;
+}
+div.clock div p {
+  font-size: 100px;
+  position: relative;
+  z-index: 100;
+}
+div.clock .placeholder {
+  color: #131212;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+}
+div.clock .meridian { margin-left: 15px; }/*END CLOCK*/
+/* AM OR PM*/
+
+/*CLASS THAT CHANGES COLOR OF TEXT TO APPEAR LIKE ITS "ON"*/
+.light-on { color: #ffffff; }
+
+p{
+    font-size: 2rem;
+}
+h1{
+  margin: 50px 0;
+}
+
+
+    </style>
+</head>
+<body>   
+    <script src="script.js"></script>
+</body>
+</html>
