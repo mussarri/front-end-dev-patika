@@ -12,11 +12,12 @@ Then it findes the second smallest element and replace it with the 2nd row. If e
 2.Big-O notation.
 
 3.Write three cases below
+    
     Average case:
 
     Worst case:
 
-    Best case: .
+    Best case: 
 
 4.What case is correct for the number 18 after the array is sorted?
 
