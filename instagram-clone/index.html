@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+
+  <style>
+
+    #link-list>li {
+        margin: 0 15px;
+    }
+
+    .like-comment-buttons{
+        display: flex;
+        list-style-type: none;
+        margin: 0 10px;
+        
+    }
+    .like-comment-buttons>li{
+        margin: 0 5px;
+    }
+
+  </style>
+
+
+  <body>
+
+
+  
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom" style="height: 54px;">
+            <div class="container justify-content-center">
+                <div class="d-flex justify-content-between col-10 align-items-center" >
+                    <a class="navbar-brand my-auto" href="index.html" class="mb-3">
+                        <img src="/assets/Instagram-Logo.png" width="103px" height="auto" class="align-top" alt="">
+                    </a>            
+                    
+                    <div>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        </form>
+                    </div>
+        
+                    <div>
+                      <ul id="icons" class="d-flex align-items-center my-auto" style="list-style-type: none;">
+                          <li class="mr-3" ><svg aria-label="Ana Sayfa" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"></path></svg></li>
+                          <li class="mr-3" ><svg aria-label="Messenger" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.003 2.001a9.705 9.705 0 110 19.4 10.876 10.876 0 01-2.895-.384.798.798 0 00-.533.04l-1.984.876a.801.801 0 01-1.123-.708l-.054-1.78a.806.806 0 00-.27-.569 9.49 9.49 0 01-3.14-7.175 9.65 9.65 0 0110-9.7z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.739"></path><path d="M17.79 10.132a.659.659 0 00-.962-.873l-2.556 2.05a.63.63 0 01-.758.002L11.06 9.47a1.576 1.576 0 00-2.277.42l-2.567 3.98a.659.659 0 00.961.875l2.556-2.049a.63.63 0 01.759-.002l2.452 1.84a1.576 1.576 0 002.278-.42z" fill-rule="evenodd"></path></svg></li>
+                          <li class="mr-3" ><svg aria-label="Yeni Gönderi" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg></li>
+                          <li class="mr-3" ><svg aria-label="Kişiler Bul" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon><polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon><circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg></li>
+                          <li class="mr-3" ><svg aria-label="Hareket Akışı" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg></li>
+                          <li>
+                            <div style="overflow: hidden; border-radius: 50%; width: 30px; height: 30px; background-color: aqua;"><img src="assets/117233356_623183255265161_8671667088254686065_n.jpg" style="width: 100%; height: 100%;" alt=""></div>
+                          </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>  
+            
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4 d-flex ">
+            <div class="col-12 col-md-6 offset-1">
+                <div class="pt-1" style="background-color: #fff; border-radius: 10px; border: 1px solid rgb(128, 128, 128, 0.3); height: 110px; overflow: hidden;">
+                    <ul class="py-2 pl-1 d-flex" style="list-style-type: none;">
+                        <li class="mr-2" style="font-size: 13px;"><div style="overflow: hidden; border-radius: 50%; width: 55px; height: 55px"><img src="assets/39492329_2162173567436276_4936325017030885376_n.jpg" style="width: 100%;"  alt=""></div> <div class="mt-1">eezgiisen</div> </li>
+                        <li class="mr-2" style="font-size: 13px;"><div style="overflow: hidden; border-radius: 50%; width: 55px; height: 55px"><img src="assets/275403962_155746536817664_4737888452292793394_n.jpg" style="width: 100%; " alt=""></div><div class="mt-1">ozgee.ds</div></li>
+                        <li  class="mr-2"style="font-size: 13px;"><div style="overflow: hidden; border-radius: 50%; width: 55px; height: 55px"><img src="assets/283720197_1039146020357976_8866000958496118867_n.jpg" style="width: 100%; " alt=""></div><div class="mt-1">mertkayha...</div></li>
+                        <li class="mr-2" style="font-size: 13px;"><div style="overflow: hidden; border-radius: 50%; width: 55px; height: 55px"><img src="assets/285873271_522688216250645_4716008266825705206_n.jpg" style="width: 100%; " alt=""></div><div class="mt-1">sulundenizz</div></li>
+                        <li class="mr-2" style="font-size: 13px;"><div style="overflow: hidden; border-radius: 50%; width: 55px; height: 55px"><img src="assets/287829504_114152871320622_4430251017793828927_n.jpg" style="width: 100%;" alt=""></div><div class="mt-1">artelficiall</div></li>
+                        <li class="mr-2" style="font-size: 13px;"><div style="overflow: hidden; border-radius: 50%; width: 55px; height: 55px"><img src="assets/93122113_645320112981456_159968273142644736_n.jpg" style="width: 100%;" alt=""></div><div class="mt-1">blockchain...</div></li>
+                    </ul>            
+                </div>
+                   
+
+
+                <div class="mt-3 rounded" style="background-color: #fff; border:1px solid rgb(128, 128, 128, 0.3);">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="d-flex" >
+                            <div class="mr-2" style="overflow: hidden; border: 1px solid gray; border-radius: 50%; width: 55px; height: 55px"><img src="assets/47582044_812583369086439_6063158031288369152_n.jpg" style="width: 100%;" alt=""></div>
+                            <div class="mr-5">
+                                <div>fitnessmovementinstitute</div>
+                                <div>Ankara, Turkey</div>
+                            </div>
+                        </div>
+                        <div class="mr-2 mt-3" style="height: 24px; width: 24px;">
+                            <svg aria-label="Diğer seçenekler" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
+                        </div>
+                    </div>
+                    <img class="p-0 w-100" src="assets/290001799_981225785877217_3375201631960309281_n.jpg" alt="">
+                    <div class="d-flex justify-content-between mt-2" style="height: 40px;">
+                        <ul class="p-0 like-comment-buttons" >
+                            <li><svg aria-label="Beğen" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg></li>
+                            <li><svg aria-label="Yorum Yap" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg></li>
+                            <li><svg aria-label="Gönderi Paylaş" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg></li>
+                        </ul>
+                        
+                        <div class="mr-2">
+                            <svg aria-label="Kaydet" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                        </div>                    
+                    </div>
+                    <div class="ml-2" > <b>38 beğenme</b> </div>
+                    <div class="ml-2" > <b>itucekirdek</b>  450 bin TL hibe desteğinden yararlanmak ister misin? 🚀</div>
+                    <div class="ml-2">...devamı</div>
+                    <div class="ml-2" style="font-size: 12px;">1 gün önce</div>
+                    <hr>
+                    <div class="d-flex justify-content-between" >
+                        <div class="d-flex">
+                            <div class="mx-2" ><svg aria-label="İfade Simgesi" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"></path></svg></div>
+                            <div>Yorum ekle...</div>
+                        </div>
+                        <div class="mr-2" style="font-size: 12px;" >
+                            Paylaş
+                        </div>
+                    </div>
+
+                </div> 
+                <!-- post -->
+
+                <div class="mt-3 rounded" style="background-color: #fff; border:1px solid rgb(128, 128, 128, 0.3);">
+                    <div class="d-flex justify-content-between p-2">
+                        <div class="d-flex" >
+                            <div class="mr-2" style="overflow: hidden; border: 1px solid gray; border-radius: 50%; width: 55px; height: 55px"><img src="assets/47582044_812583369086439_6063158031288369152_n.jpg" style="width: 100%;" alt=""></div>
+                            <div class="mr-5">
+                                <div>fitnessmovementinstitute</div>
+                                <div>Ankara, Turkey</div>
+                            </div>
+                        </div>
+                        <div class="mr-2 mt-3" style="height: 24px; width: 24px;">
+                            <svg aria-label="Diğer seçenekler" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><circle cx="12" cy="12" r="1.5"></circle><circle cx="6" cy="12" r="1.5"></circle><circle cx="18" cy="12" r="1.5"></circle></svg>
+                        </div>
+                    </div>
+                    <img class="p-0 w-100" src="assets/290001799_981225785877217_3375201631960309281_n.jpg" alt="">
+                    <div class="d-flex justify-content-between mt-1" style="height: 40px;">
+                        <ul class="p-0" >
+                            <li><svg aria-label="Beğen" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg></li>
+                            <li><svg aria-label="Yorum Yap" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M20.656 17.008a9.993 9.993 0 10-3.59 3.615L22 22z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg></li>
+                            <li><svg aria-label="Gönderi Paylaş" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg></li>
+                        </ul>
+                        
+                        <div style="list-style-type: none;" >
+                            <svg aria-label="Kaydet" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                        </div>                    
+                    </div>
+                    <div class="ml-2" > <b>38 beğenme</b> </div>
+                    <div class="ml-2" > <b>itucekirdek</b>  450 bin TL hibe desteğinden yararlanmak ister misin? 🚀</div>
+                    <div class="ml-2">...devamı</div>
+                    <div class="ml-2" style="font-size: 12px;">1 gün önce</div>
+                    <hr>
+                    <div class="d-flex justify-content-between" >
+                        <div class="d-flex">
+                            <div class="mx-2" ><svg aria-label="İfade Simgesi" class="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M15.83 10.997a1.167 1.167 0 101.167 1.167 1.167 1.167 0 00-1.167-1.167zm-6.5 1.167a1.167 1.167 0 10-1.166 1.167 1.167 1.167 0 001.166-1.167zm5.163 3.24a3.406 3.406 0 01-4.982.007 1 1 0 10-1.557 1.256 5.397 5.397 0 008.09 0 1 1 0 00-1.55-1.263zM12 .503a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012 .503zm0 21a9.5 9.5 0 119.5-9.5 9.51 9.51 0 01-9.5 9.5z"></path></svg></div>
+                            <div>Yorum ekle...</div>
+                        </div>
+                        <div class="mr-2" style="font-size: 12px;" >
+                            Paylaş
+                        </div>
+                    </div>
+
+                </div>
+                <!-- post -->
+            </div>
+
+            <!-- right col -->
+            <div class="col-md-4 pt-2">
+                    <div class="bg-light">
+                        <div class=" d-flex justify-content-between align-items-center pr-2">
+                            <div class="d-flex align-items-center" >
+                                <div class="mr-2" style="border-radius: 50%; width: 55px; height: 55px"><img src="assets/117233356_623183255265161_8671667088254686065_n.jpg" style="width: 100%;" alt=""></div>
+                                <div class="ml-2" style="font-size: 13px; ;"> 
+                                    <div> <b>mustafasaricicekk</b></div>
+                                    <div>Mustafa Sarıçiçek</div>  
+                                </div>
+                            </div>
+                            <div class="btn-link mt-2" style="font-size:12px;"> <strong>Geçiş Yap</strong> </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between mt-4 w-100 ">
+                        <h6 style="color: rgba(142,142,142); font-size: 14px;" > <strong>Senin İçin Öneriler</strong> </h6>
+                        <h6 style="font-size: 12px;" > <b>Tümünü Gör</b></h6>
+                    </div>
+                    <div class="bg-light mt-3 w-100">
+                        <div class=" d-flex justify-content-between align-items-center pr-2 mb-3">
+                            <div class="d-flex align-items-center" >
+                                <div class="mr-2" style="overflow: hidden; border-radius: 50%; width: 40px; height: 40px"><img src="assets/280242737_160310383075117_6004504259274877251_n.jpg" style="width: 100%;" alt=""></div>
+                                <div class="ml-2" style="font-size: 13px; ;"> 
+                                    <div> <b>erdemsoytek</b></div>
+                                    <div>Esat Erdem Soytek</div>  
+                                </div>
+                            </div>
+                            <div class="btn-link mt-2" style="font-size:12px;"> <strong>Takip Et</strong></div>
+                        </div>
+                        <div class=" d-flex justify-content-between align-items-center pr-2 mb-3">
+                            <div class="d-flex align-items-center" >
+                                <div class="mr-2" style="overflow: hidden; border-radius: 50%; width: 40px; height: 40px"><img src="assets/275853028_1135746520559870_5439527010270564620_n.jpg" style="width: 100%;" alt=""></div>
+                                <div class="ml-2" style="font-size: 13px; ;"> 
+                                    <div> <b>dr.fatihkosar</b></div>
+                                    <div>Followed by hbeyzapolat + 56 more</div>  
+                                </div>
+                            </div>
+                            <div class="btn-link mt-2" style="font-size:12px;"> <strong>Takip Et</strong></div>
+                        </div>
+                        <div class=" d-flex justify-content-between align-items-center pr-2 mb-3">
+                            <div class="d-flex align-items-center" >
+                                <div class="mr-2" style="overflow: hidden; border-radius: 50%; width: 40px; height: 40px"><img src="assets/278941067_514770360226655_4612554648696512125_n.jpg" style="width: 100%;" alt=""></div>
+                                <div class="ml-2" style="font-size: 13px; ;"> 
+                                    <div> <b>esad.caliskan</b></div>
+                                    <div>Followed by mustafa_onsoy + 20 more</div>  
+                                </div>
+                            </div>
+                            <div class="btn-link mt-2" style="font-size:12px;"> <strong>Takip Et</strong></div>
+                        </div>
+                        <div class=" d-flex justify-content-between align-items-center pr-2 mb-3">
+                            <div class="d-flex align-items-center" >
+                                <div class="mr-2" style="overflow: hidden; border-radius: 50%; width: 40px; height: 40px"><img src="assets/287115003_798251934474668_7531052506815491068_n.jpg" style="width: 100%;" alt=""></div>
+                                <div class="ml-2" style="font-size: 13px; ;"> 
+                                    <div> <b>faruukunlu</b></div>
+                                    <div>Faruk Ünlü</div>  
+                                </div>
+                            </div>
+                            <div class="btn-link mt-2" style="font-size:12px;"> <strong>Takip Et</strong></div>
+                        </div>
+                        <div class=" d-flex justify-content-between align-items-center pr-2 mb-3">
+                            <div class="d-flex align-items-center" >
+                                <div class="mr-2" style="border-radius: 50%; width: 40px; height: 40px"><img src="assets/44884218_345707102882519_2446069589734326272_n.jpg" style="width: 100%;" alt=""></div>
+                                <div class="ml-2" style="font-size: 13px; ;"> 
+                                    <div> <b>bugrahan_kz</b></div>
+                                    <div>Followed by kerimkaragozz + 9 more</div>  
+                                </div>
+                            </div>
+                            <div class="btn-link mt-2" style="font-size:12px;"> <strong>Takip Et</strong></div>
+                        </div>
+                                                   
+                    </div>
+                    <div class="my-4" >
+                        <ul class="d-flex flex-row flex-wrap w-100 p-0" id="link-list" style="font-size: 12px; list-style-type: none; color: rgba(129,129,129);">
+                            <li  >Hakkında</li>
+                            <li>Yardım</li>
+                            <li>Basın</li>
+                            <li>API</li>
+                            <li>İş Fırsatlar</li>
+                            <li>Gizlilik</li>
+                            <li>Koşullar</li>
+                            <li>Konular</li>
+                            <li>Dil</li>
+                        </ul>                
+                    </div>
+                    <div  style="font-size: 12px; color: rgba(129,129,129); text-transform: uppercase;">© 2022 Instagram from Meta</div> 
+
+            </div>
+    </div>
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
