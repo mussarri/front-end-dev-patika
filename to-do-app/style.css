@@ -1,0 +1,9 @@
+.list-el:nth-child(odd){
+    background-color: rgba(171, 171, 171, 0.11);
+}
+.list-el:nth-child(even){
+    background-color: rgba(171, 171, 171, 0.226);
+}
+.list-el:hover{
+    background-color: rgba(171, 171, 171, 0.461);
+}
